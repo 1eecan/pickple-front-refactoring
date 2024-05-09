@@ -83,7 +83,7 @@ const mockPostGameParticipate = http.post<{ gameId: string }, DefaultBodyType>(
       email: 'james123@pickple.kr',
       nickname: 'james123',
       introduction: '안녕하십니까. 제임스입니다. 아이고~ 사장님~~',
-      profileImageUrl: 'https://s3.amazonaws.com/pickple/james123.jpg',
+      profileImageUrl: 'https://picsum.photos/200',
       mannerScore: 21,
       mannerScoreCount: 30,
       addressDepth1: '서울시',
