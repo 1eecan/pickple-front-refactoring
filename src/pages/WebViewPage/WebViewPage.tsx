@@ -370,10 +370,10 @@ const Carousel = styled.div`
   align-items: center;
   overflow: hidden;
 
-  & > img:nth-child(2) {
+  & > img:nth-type-of(2) {
     animation-name: secondAnimation;
   }
-  & > img:nth-child(3) {
+  & > img:nth-type-of(3) {
     animation-name: thirdAnimation;
   }
 `;
@@ -482,39 +482,39 @@ const StackContainer = styled.div`
     opacity: 0;
   }
 
-  &.backEndStack > :nth-child(1),
-  &.frontEndStack > :nth-child(1) {
+  &.backEndStack > :nth-type-of(1),
+  &.frontEndStack > :nth-type-of(1) {
     opacity: 0;
     animation: opacityChange 1s forwards;
     animation-delay: 100ms;
   }
 
-  &.backEndStack > :nth-child(2),
-  &.frontEndStack > :nth-child(2) {
+  &.backEndStack > :nth-type-of(2),
+  &.frontEndStack > :nth-type-of(2) {
     opacity: 0;
     animation: opacityChange 1s forwards;
     animation-delay: 180ms;
   }
-  &.backEndStack > :nth-child(3),
-  &.frontEndStack > :nth-child(3) {
+  &.backEndStack > :nth-type-of(3),
+  &.frontEndStack > :nth-type-of(3) {
     opacity: 0;
     animation: opacityChange 1s forwards;
     animation-delay: 260ms;
   }
-  &.backEndStack > :nth-child(4),
-  &.frontEndStack > :nth-child(4) {
+  &.backEndStack > :nth-type-of(4),
+  &.frontEndStack > :nth-type-of(4) {
     opacity: 0;
     animation: opacityChange 1s forwards;
     animation-delay: 340ms;
   }
-  &.backEndStack > :nth-child(5),
-  &.frontEndStack > :nth-child(5) {
+  &.backEndStack > :nth-type-of(5),
+  &.frontEndStack > :nth-type-of(5) {
     opacity: 0;
     animation: opacityChange 1s forwards;
     animation-delay: 420ms;
   }
-  &.backEndStack > :nth-child(6),
-  &.frontEndStack > :nth-child(6) {
+  &.backEndStack > :nth-type-of(6),
+  &.frontEndStack > :nth-type-of(6) {
     opacity: 0;
     animation: opacityChange 1s forwards;
     animation-delay: 500ms;
