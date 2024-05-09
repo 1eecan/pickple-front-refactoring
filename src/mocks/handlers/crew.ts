@@ -20,8 +20,7 @@ const mockPostCrew = http.post<PathParams, PostCrewRequest, PostCrewResponse>(
       content: '안녕하세요, 노드크루입니다. 백둥체육관 201호에서 진행합니다.',
       memberCount: 10,
       maxMemberCount: 15,
-      profileImageUrl:
-        'pickpleCrewProfileImage.s3.ap-northeast-2.amazonaws.com',
+      profileImageUrl: 'https://picsum.photos/200',
       backgroundImageUrl:
         'pickpleCrewBackgroundImage.s3.ap-northeast-2.amazonaws.com',
       status: '모집 중',
@@ -32,7 +31,7 @@ const mockPostCrew = http.post<PathParams, PostCrewRequest, PostCrewResponse>(
         email: 'james123@pickple.kr',
         nickname: 'james123',
         introduction: '안녕하십니까. 제임스입니다. 아이고~ 사장님~~',
-        profileImageUrl: 'https://s3.amazonaws.com/pickple/james123.jpg',
+        profileImageUrl: 'https://picsum.photos/200',
         mannerScore: 21,
         mannerScoreCount: 30,
         addressDepth1: '서울시',
