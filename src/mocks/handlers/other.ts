@@ -1,9 +1,13 @@
 import { HttpResponse, http } from 'msw';
 
-import { POSITIONS } from '@mocks/data/other';
+import { LOCATIONS, POSITIONS } from '@mocks/data/other';
 
 const mockGetPositions = http.get('/api/positions', () => {
   return HttpResponse.json(POSITIONS);
 });
 
-export const otherHandlers = [mockGetPositions];
+const mockGetLocations = http.get('/api/address', () => {
+  return HttpResponse.json(LOCATIONS);
+});
+
+export const otherHandlers = [mockGetPositions, mockGetLocations];
