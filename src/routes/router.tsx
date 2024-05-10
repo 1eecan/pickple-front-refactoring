@@ -235,7 +235,8 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: 'auth/kakao/callback',
+        //TODO: 원래 주소 'auth/kakao/callback
+        path: 'auth/kakao',
         element: <RedirectPage />,
       },
       {
