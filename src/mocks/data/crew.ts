@@ -9,8 +9,7 @@ export const crews: Crew[] = Array(100)
     memberCount: 10,
     maxMemberCount: 15,
     profileImageUrl: 'https://picsum.photos/200',
-    backgroundImageUrl:
-      'pickpleCrewBackgroundImage.s3.ap-northeast-2.amazonaws.com',
+    backgroundImageUrl: 'https://picsum.photos/200',
     status: '모집 중',
     likeCount: 9,
     competitionPoint: 104,
@@ -41,8 +40,7 @@ export const CREW_DETAIL: CrewProfile = {
   memberCount: 10,
   maxMemberCount: 15,
   profileImageUrl: 'https://picsum.photos/200',
-  backgroundImageUrl:
-    'pickpleCrewBackgroundImage.s3.ap-northeast-2.amazonaws.com',
+  backgroundImageUrl: 'https://picsum.photos/200',
   status: '모집 중',
   likeCount: 9,
   competitionPoint: 104,
@@ -98,8 +96,7 @@ export const NEAR_CREWS: CrewProfile[] = Array(100)
       memberCount: 10,
       maxMemberCount: 15,
       profileImageUrl: 'https://picsum.photos/200',
-      backgroundImageUrl:
-        'pickpleCrewBackgroundImage.s3.ap-northeast-2.amazonaws.com',
+      backgroundImageUrl: 'https://picsum.photos/200',
       status: '모집 중',
       likeCount: 9,
       competitionPoint: 104,
