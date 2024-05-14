@@ -1,12 +1,9 @@
 import { RouterProvider } from 'react-router-dom';
 
 import { ThemeProvider } from '@emotion/react';
-import styled from '@emotion/styled';
 import { QueryClient } from '@tanstack/react-query';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-
-import { WebViewPage } from '@pages/WebViewPage/WebViewPage';
 
 import { router } from '@routes/router';
 
@@ -27,33 +24,17 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <>
-      <AppView>
-        <QueryClientProvider client={queryClient}>
-          <ConnectSSE />
-          <ThemeProvider theme={theme}>
-            <RouterProvider router={router} />
-            <ReactQueryDevtools />
-            <GlobalStyle />
-          </ThemeProvider>
-        </QueryClientProvider>
-      </AppView>
-      <WebView>
-        <WebViewPage />
-      </WebView>
+      {/*TODO: 추후 앱규격으로 리팩터링, 웹뷰는 따로*/}
+      <QueryClientProvider client={queryClient}>
+        <ConnectSSE />
+        <ThemeProvider theme={theme}>
+          <RouterProvider router={router} />
+          <ReactQueryDevtools />
+          <GlobalStyle />
+        </ThemeProvider>
+      </QueryClientProvider>
     </>
   );
 }
 
 export default App;
-
-const AppView = styled.div`
-  @media (min-width: 501px) {
-    display: none;
-  }
-`;
-
-const WebView = styled.div`
-  @media (max-width: 500px) {
-    display: none;
-  }
-`;
