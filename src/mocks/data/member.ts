@@ -18,8 +18,7 @@ export const AUTH_LOGIN_MEMBER: Authenticated = {
     'eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTg1MDU3MzYsImV4cCI6MTY5ODUwNjczNn0.GIybXCnow3xx7B6phYfSqvpVV2GB9ieos7t-ciGSCEJMIZqeEk9DcJcLsfHNUISTf4-xWTtnZ7_OVR9WAm3AfA',
   id: 1,
   nickname: '창현',
-  profileImageUrl:
-    'http://k.kakaocdn.net/dn/dpk9l1/btqmGhA2lKL/Oz0wDuJn1YV2DIn92f6DVK/img_640x640.jpg',
+  profileImageUrl: 'https://picsum.photos/200',
   email: 'changhyeon.h@kakao.com',
   oauthId: 32014123,
   oauthProvider: 'KAKAO',
@@ -33,8 +32,7 @@ export const AUTH_LOGIN_NON_MEMBER: Registration = {
   refreshToken: null,
   id: null,
   nickname: '창현',
-  profileImageUrl:
-    'http://k.kakaocdn.net/dn/dpk9l1/btqmGhA2lKL/Oz0wDuJn1YV2DIn92f6DVK/img_640x640.jpg',
+  profileImageUrl: 'https://picsum.photos/200',
   email: 'changhyeon.h@kakao.com',
   oauthId: 32014123,
   oauthProvider: 'KAKAO',
@@ -54,8 +52,7 @@ export const MEMBERS: PostRegistrationResponse = {
     'eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTg1MDU3MzYsImV4cCI6MTY5ODUwNjczNn0.GIybXCnow3xx7B6phYfSqvpVV2GB9ieos7t-ciGSCEJMIZqeEk9DcJcLsfHNUISTf4-xWTtnZ7_OVR9WAm3AfA',
   id: 1,
   nickname: '창현',
-  profileImageUrl:
-    'http://k.kakaocdn.net/dn/dpk9l1/btqmGhA2lKL/Oz0wDuJn1YV2DIn92f6DVK/img_640x640.jpg',
+  profileImageUrl: 'https://picsum.photos/200',
   email: 'changhyeon.h@kakao.com',
   oauthId: 32014123,
   oauthProvider: 'KAKAO',
