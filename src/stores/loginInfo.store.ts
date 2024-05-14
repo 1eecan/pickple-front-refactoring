@@ -1,5 +1,4 @@
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
 
 import { Authenticated, Registration } from '@type/models';
 
@@ -9,14 +8,7 @@ type LoginInfoState = {
   setLoginInfo: (loginInfo: LoginInfo | null) => void;
 };
 
-export const useLoginInfoStore = create(
-  persist<LoginInfoState>(
-    (set) => ({
-      loginInfo: null,
-      setLoginInfo: (loginInfo) => set({ loginInfo }),
-    }),
-    {
-      name: 'LOGIN_INFO_PERSIST',
-    }
-  )
-);
+export const useLoginInfoStore = create<LoginInfoState>((set) => ({
+  loginInfo: null,
+  setLoginInfo: (loginInfo) => set({ loginInfo }),
+}));
