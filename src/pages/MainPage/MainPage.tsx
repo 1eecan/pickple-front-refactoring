@@ -1,8 +1,6 @@
 import { Header } from '@components/Header';
 
-import { theme } from '@styles/theme';
-
-import { MainPageContainer } from './MainPage.style';
+import { MAIN_PAGE_BUTTON_PROP, MainPageContainer } from './MainPage.style';
 import CrewRanking from './components/CrewRanking';
 import NearGame from './components/NearGame';
 import RecommendCrew from './components/RecommendCrew';
@@ -31,15 +29,4 @@ export const MainPage = () => {
       <RecommendCrew {...recommendCrewProps} />
     </MainPageContainer>
   );
-};
-
-const MAIN_PAGE_BUTTON_PROP = {
-  width: '100%',
-  height: '2.5rem',
-  fontSize: `${theme.FONT_SIZE.MD}`,
-  fontWeight: theme.FONT_WEIGHT.BOLD,
-  lineHeight: 0,
-  textColor: `${theme.PALETTE.RED_400}`,
-  borderColor: `${theme.PALETTE.RED_400}`,
-  backgroundColor: 'white',
 };
