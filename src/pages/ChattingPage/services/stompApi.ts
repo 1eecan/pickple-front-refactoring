@@ -1,11 +1,11 @@
 import Stomp from 'stompjs';
 
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+//const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 type ChatId = string | number;
 
 export const stompConfig = {
-  webSocketEndpoint: `${BASE_URL}/chat`,
+  webSocketEndpoint: `${'http://localhost:5174'}/chat`,
   subscribe: (roomId: ChatId) => `/receive/rooms/${roomId}`,
   enter: (roomId: ChatId) => `/send/messages/enter/${roomId}`,
   send: (roomId: ChatId) => `/send/messages/talk/${roomId}`,

@@ -1,5 +1,6 @@
 import { testHandlers } from './apiTest';
 import { authHandlers } from './auth';
+import { chatHandlers } from './chat';
 import { crewHandlers } from './crew';
 import { gameHandlers } from './game';
 import { memberHandlers } from './member';
@@ -14,4 +15,5 @@ export const handlers = [
   ...memberHandlers,
   ...otherHandlers,
   ...rankingHandlers,
+  ...chatHandlers,
 ];
