@@ -1,3 +1,5 @@
+import { NavigateFunction } from 'react-router-dom';
+
 import { RankingHeader } from '@pages/CrewsRankingPage/CrewsRankingPage.styles';
 import { RankingItem } from '@pages/CrewsRankingPage/components/RankingItem';
 
@@ -5,14 +7,21 @@ import { Button } from '@components/shared/Button';
 import { Flex } from '@components/shared/Flex';
 import { Text } from '@components/shared/Text';
 
+import { CrewRank } from '@type/models/CrewRank';
+
 import { PATH_NAME } from '@constants/pathName';
 
+import { MAIN_PAGE_BUTTON_PROP_TYPE } from '../MainPage.style';
 import { MainPageSubContainer } from '../MainPage.style';
 
 const CrewRanking = ({
   slicedCrewsRanking,
   navigate,
   MAIN_PAGE_BUTTON_PROP,
+}: {
+  slicedCrewsRanking: CrewRank[];
+  navigate: NavigateFunction;
+  MAIN_PAGE_BUTTON_PROP: MAIN_PAGE_BUTTON_PROP_TYPE;
 }) => {
   return (
     <MainPageSubContainer>
