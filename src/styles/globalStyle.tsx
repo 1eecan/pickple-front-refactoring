@@ -32,11 +32,11 @@ const style = css`
     font-family: inherit;
     box-sizing: border-box;
   }
-  @media (min-width: 501px) {
+  /* @media (min-width: 501px) {
     html {
       scroll-behavior: smooth;
     }
-  }
+  } */
 `;
 const GlobalStyle = () => {
   return <Global styles={style} />;
