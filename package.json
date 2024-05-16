@@ -41,6 +41,7 @@
     "@tanstack/react-query-devtools": "^5.1.0",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.2",
     "@trivago/prettier-plugin-sort-imports": "^4.2.1",
     "@types/daum-postcode": "^2.0.2",
     "@types/event-source-polyfill": "^1.0.4",
