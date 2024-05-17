@@ -15,7 +15,7 @@ afterAll(() => {
   server?.close();
 });
 
-vi.mock('zustand');
+//vi.mock('zustand');
 
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
