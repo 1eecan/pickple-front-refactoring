@@ -49,6 +49,7 @@ const MatchItem = ({
   return (
     <MatchItemWrapper>
       <MatchItemInnerWrapper
+        data-testid="match-item"
         onClick={() => navigate(PATH_NAME.GET_GAMES_PATH(matchId))}
       >
         <MatchStatus>

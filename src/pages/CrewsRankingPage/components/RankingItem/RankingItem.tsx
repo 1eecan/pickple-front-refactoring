@@ -27,6 +27,7 @@ export const RankingItem = ({
       align="center"
       onClick={onClick}
       backgroundColor={getRankingItemBackgroundColor(rank)}
+      data-testid="ranking-item"
     >
       <Flex align="center" gap={10}>
         <RankText size={14} nowrap>

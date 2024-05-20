@@ -1,27 +1,20 @@
-import { NavigateFunction } from 'react-router-dom';
-
-import { EmotionJSX } from 'node_modules/@emotion/react/types/jsx-namespace';
+import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { Button } from '@components/shared/Button';
 import { Text } from '@components/shared/Text';
 
 import { PATH_NAME } from '@constants/pathName';
 
-import {
-  MAIN_PAGE_BUTTON_PROP_TYPE,
-  MainPageSubContainer,
-} from '../MainPage.style';
+import { MainPageSubContainer } from '../MainPage.style';
+import { MainPageContext } from '../hooks/MainPageProvider';
 import { MainPageNoContentItem } from './MainPageNoContentItem';
 
-const NearGame = ({
-  filteredGameData,
-  navigate,
-  MAIN_PAGE_BUTTON_PROP,
-}: {
-  filteredGameData: EmotionJSX.Element[];
-  navigate: NavigateFunction;
-  MAIN_PAGE_BUTTON_PROP: MAIN_PAGE_BUTTON_PROP_TYPE;
-}) => {
+const NearGame = () => {
+  const navigate = useNavigate();
+  const { filteredGameData, MAIN_PAGE_BUTTON_PROP } =
+    useContext(MainPageContext);
+
   return (
     <MainPageSubContainer>
       <Text children={'내 근처 게스트 매치'} weight={700} size={'1.25rem'} />

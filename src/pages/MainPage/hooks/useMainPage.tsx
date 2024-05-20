@@ -86,7 +86,6 @@ export const useMainPage = () => {
     )
   );
   return {
-    navigate,
     slicedCrewsRanking,
     filteredGameData,
     filteredCrewData,

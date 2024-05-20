@@ -31,7 +31,12 @@ export const CrewItem = ({
   onClick,
 }: CrewItemProps) => {
   return (
-    <CrewItemWrapper gap={10} justify="space-between" onClick={onClick}>
+    <CrewItemWrapper
+      gap={10}
+      justify="space-between"
+      onClick={onClick}
+      data-testid="crew-item"
+    >
       <CrewProfileImage width="82px" src={imgSrc} alt="profile-img" />
       <CrewDescription direction="column" gap={3}>
         <Text size={20} ellipsis={1}>
