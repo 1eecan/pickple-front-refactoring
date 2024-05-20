@@ -1,4 +1,5 @@
-import { NavigateFunction } from 'react-router-dom';
+import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { RankingHeader } from '@pages/CrewsRankingPage/CrewsRankingPage.styles';
 import { RankingItem } from '@pages/CrewsRankingPage/components/RankingItem';
@@ -7,22 +8,15 @@ import { Button } from '@components/shared/Button';
 import { Flex } from '@components/shared/Flex';
 import { Text } from '@components/shared/Text';
 
-import { CrewRank } from '@type/models/CrewRank';
-
 import { PATH_NAME } from '@constants/pathName';
 
-import { MAIN_PAGE_BUTTON_PROP_TYPE } from '../MainPage.style';
 import { MainPageSubContainer } from '../MainPage.style';
+import { MainPageContext } from '../hooks/MainPageProvider';
 
-const CrewRanking = ({
-  slicedCrewsRanking,
-  navigate,
-  MAIN_PAGE_BUTTON_PROP,
-}: {
-  slicedCrewsRanking: CrewRank[];
-  navigate: NavigateFunction;
-  MAIN_PAGE_BUTTON_PROP: MAIN_PAGE_BUTTON_PROP_TYPE;
-}) => {
+const CrewRanking = () => {
+  const navigate = useNavigate();
+  const { slicedCrewsRanking, MAIN_PAGE_BUTTON_PROP } =
+    useContext(MainPageContext);
   return (
     <MainPageSubContainer>
       <Text children={'크루 랭킹'} weight={700} size={'1.25rem'} />
