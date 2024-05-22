@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-interface AccessTokenState {
+export interface AccessTokenState {
   accessToken: string | null;
   setAccessToken: (accessToken: string | null) => void;
 }

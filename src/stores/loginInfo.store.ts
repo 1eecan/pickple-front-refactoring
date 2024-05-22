@@ -3,7 +3,7 @@ import { create } from 'zustand';
 import { Authenticated, Registration } from '@type/models';
 
 type LoginInfo = Authenticated | Registration;
-type LoginInfoState = {
+export type LoginInfoState = {
   loginInfo: LoginInfo | null;
   setLoginInfo: (loginInfo: LoginInfo | null) => void;
 };
